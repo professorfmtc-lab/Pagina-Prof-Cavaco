@@ -226,3 +226,10 @@ footer .credito{font-size:.82rem;color:#998f7d;margin-top:12px}
   .corpo strong{font-size:.94rem}
   .ano-banda .num{font-size:2.8rem}
 }
+
+/* ---------------------------------------------------------------
+   Aviso "Ainda não há materiais publicados"
+   Desaparece sozinho assim que houver pelo menos um recurso
+   visível (ou seja, sem a classe .oculto) dentro do mesmo tema.
+   --------------------------------------------------------------- */
+.unidade-corpo:has(.recurso:not(.oculto)) .vazio{display:none}
